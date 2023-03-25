@@ -18,7 +18,7 @@ db = client.test
 
 def echo(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(update.message.text)
-    db.test.insert_one({"name": "echo"})
+    db.test.insert_one({"name": update.message.text})
 
 
 # set up the introductory statement for the bot when the /start command is invoked
