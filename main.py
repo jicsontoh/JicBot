@@ -52,7 +52,7 @@ dispatcher.add_handler(CommandHandler("help", help))
 dispatcher.add_handler(CommandHandler("test", test))
 
 # to test locally
-updater.start_polling()
+# updater.start_polling()
 
 @app.post("/")
 def index() -> Response:
